@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <script
+      src="https://kit.fontawesome.com/a5aa283824.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>snowMusic</title>
+    <!-- Favicon -->
+  </head>
+
+  <body>
+    <!-- ****************************************** 
+            Navigation Bar
+    ****************************************** -->
+
+    <nav class="navbar-fixed">
+        <!-- Green Line Top -->
+        <div id="line"></div>
+        <!-- Navigation Bar -->
+        <div class="navbar">
+          <!-- Left Panel of Navigation Bar -->
+          <div class="i-flex">
+  
+            <!-- List Option -->
+            <div class="nav-disable-small">
+            <div class="dropdown dropdown-nav">
+                <input type="checkbox" id="list-toggle">
+                <label class="list-icon" for="list-toggle">
+                    <i class="fa-solid fa-bars color-green"></i>
+                </label>
+                <ul>
+                    <li><a href="index.html">
+                        <i class="fa-solid fa-house"></i> &nbsp Home</a>
+                    </li>
+                    <li><a href="#">
+                        <i class="fa-solid fa-headphones-simple"></i> &nbsp Explore</a> 
+                     </li>
+                     <li><a href="#">
+                        <i class="fa-regular fa-circle-play"></i> &nbsp Library</a>
+                    </li>
+                    <li><a href="#">
+                        <i class="fa-solid fa-podcast"></i> &nbsp Podcast</a>
+                    </li>
+            
+                    <li><a href="#">
+                        <i class="fa-solid fa-language"></i> &nbsp Language</a>
+                    </li>
+  
+                    <li><a href="#">
+                        <i class="fa-solid fa-download"></i> &nbsp Download</a>
+                    </li>
+  
+                    <li><a href="#">
+                        <i class="fa-solid fa-circle-info"></i> &nbsp About</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <!-- Brand Logo and Name -->
+            <div class="brand-logo">
+              <a href="index.html">
+                <i class="fa-brands fa-d-and-d color-green"></i>
+              </a>
+            </div>
+            <span>
+              <div><a id="brand-name" href="index.html"> snow </a></div>
+              <div><a id="brand-suffix" href="index.html"> MUSIC </a></div>
+            </span>
+  
+            <!-- Search Bar -->
+            <span class="search i-flex nav-disable-medium">
+              <span>
+                <i class="fa-solid fa-magnifying-glass color-white"> </i>
+              </span>
+              <input type="text" placeholder="Search" />
+              <span><i class="fas fa-microphone color-white"></i></span>
+            </span>
+          </div>
+  
+          <!-- Right Panel of Navigation Bar -->
+          <div class="i-flex">
+            <div class="link nav-disable-big"><a href="index.html">Home</a></div>
+            <div class="link nav-disable-big"><a href=" ">Explore</a></div>
+            <div class="link nav-disable-big"><a href=" ">Library</a></div>
+            <div class="link-icon nav-disable-lens">
+              <a href=" "><i class="fa-solid fa-magnifying-glass"></i> </a>
+            </div>
+            <div class="link-icon">
+              <a href=" "><i class="fa-solid fa-sun"></i> </a>
+            </div>
+            <div class="link-icon nav-disable-big">
+              <a href=" "> <i class="fa-solid fa-language"></i> </a>
+            </div>
+  
+            <div class="link-icon">
+              <a href=" "> <i class="fa-solid fa-bell"></i> </a>
+            </div>
+  
+            <div class="link-icon nav-disable-small">
+                <a href=" "><i class="fa-solid fa-user color-green sign-in-icon"></i></a>
+            </div>
+            <div class="profile-pic nav-disable-big">
+              <img src="dp.png" alt="profile_pic" />
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Setup Outer container's Structure  -->
+    <div class="i-flex outer-main">
+      <!-- Sub-main Section -->
+      <div class="main-section">
+        <section class="artist-1st-section i-flex">
+          <!-- Artist Image -->
+          <div class="artist-pic">
+            <img class="pic" src="Artist/nautiyal.jpeg" alt="Artist-image" />
+          </div>
+
+          <!-- Details of Artist -->
+          <div class="artist-details">
+            <!-- Artist Name and Followers -->
+            <div class="artist-heading i-flex">
+              <div class="singer">
+                <p class="artist-name">Jubin Nautiyal</p>
+                <p class="artist-font">Indian Singer</p>
+              </div>
+              <div class="artist-font">999 Followers</div>
+            </div>
+
+            <!-- Detailed description of Artist-->
+            <div class="description">
+              Jubin Nautiyal (born 14 June 1989) is an Indian playback singer
+              and performer. In June 2022, he won the IIFA award for “Playback
+              Singer (Male)” for the song “Raataan Lambiyan.” He was awarded
+              Upcoming Male Vocalist of the Year at 8th Mirchi Music Awards for
+              his song "Zindagi Kuch Toh Bata (Reprise)" from Bajrangi Bhaijaan.
+              He also won the Rising Musical Star Award at Zee Business Awards.
+              He has since recorded songs for films in various Indian languages,
+              predominantly Hindi.
+            </div>
+
+            <!-- Button controls -->
+            <div class="controls">
+              <button class="btn">Play All</button>
+              <button class="btn">Follow</button>
+            </div>
+
+            <!-- Total tracks and albums -->
+            <div class="songs i-flex">
+              <div class="tracks"><span>247</span> Tracks</div>
+              <div class="albums"><span>128</span> Albums</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 1st queued song -->
+        <section class="queue-song-container bg-color-nav i-flex">
+          <!-- Left Panel -->
+          <div class="i-flex">
+            <!-- Queued Songs Count -->
+            <div class="count">01</div>
+            <!-- Image with Play-pause hover effect -->
+            <div class="queue-song-image">
+              <a href="#player">
+                <img src="Released/hawaii.jpg" alt="Hawaii" />
+              </a>
+            </div>
+            <!-- Song Details -->
+            <div class="concern">
+              <p class="name queue-song-name">Hawaii</p>
+              <p class="date queue-singer-name">Maluma</p>
+            </div>
+          </div>
+
+          <!-- Right Panel -->
+          <div class="i-flex">
+            <div class="link-icon">
+              <a href=" "> <i class="fa-solid fa-heart"></i> </a>
+            </div>
+            <div class="link-icon">
+              <a href=" "> <i class="fa-solid fa-plus"></i> </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2nd queued song -->
+        <section class="queue-song-container bg-color-nav i-flex">
+          <!-- Left Panel -->
+          <div class="i-flex">
+            <!-- Queued Songs Count -->
+            <div class="count">02</div>
+            <!-- Image with Play-pause hover effect -->
+            <div class="queue-song-image">
+              <a href="#player">
+                <img src="Released/hawaii.jpg" alt="Hawaii" />
+              </a>
+            </div>
+            <!-- Song Details -->
+            <div class="concern">
+              <p class="name queue-song-name">Hawaii</p>
+              <p class="date queue-singer-name">Maluma</p>
+            </div>
+          </div>
+
+          <!-- Right Panel -->
+          <div class="i-flex">
+            <div class="link-icon">
+              <a href=" "> <i class="fa-solid fa-heart"></i> </a>
+            </div>
+            <div class="link-icon">
+              <a href=" "> <i class="fa-solid fa-plus"></i> </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3rd queued song -->
+        <section class="queue-song-container bg-color-nav i-flex">
+          <!-- Left Panel -->
+          <div class="i-flex">
+            <!-- Queued Songs Count -->
+            <div class="count">03</div>
+            <!-- Image with Play-pause hover effect -->
+            <div class="queue-song-image">
+              <a href="#player">
+                <img src="Released/hawaii.jpg" alt="Hawaii" />
+              </a>
+            </div>
+            <!-- Song Details -->
+            <div class="concern">
+              <p class="name queue-song-name">Hawaii</p>
+              <p class="date queue-singer-name">Maluma</p>
+            </div>
+          </div>
+
+          <!-- Right Panel -->
+          <div class="i-flex">
+            <div class="link-icon">
+              <a href=" "> <i class="fa-solid fa-heart"></i> </a>
+            </div>
+            <div class="link-icon">
+              <a href=" "> <i class="fa-solid fa-plus"></i> </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4th queued song -->
+        <section class="queue-song-container bg-color-nav i-flex">
+          <!-- Left Panel -->
+          <div class="i-flex">
+            <!-- Queued Songs Count -->
+            <div class="count">04</div>
+            <!-- Image with Play-pause hover effect -->
+            <div class="queue-song-image">
+              <a href="#player">
+                <img src="Released/hawaii.jpg" alt="Hawaii" />
+              </a>
+            </div>
+            <!-- Song Details -->
+            <div class="concern">
+              <p class="name queue-song-name">Hawaii</p>
+              <p class="date queue-singer-name">Maluma</p>
+            </div>
+          </div>
+
+          <!-- Right Panel -->
+          <div class="i-flex">
+            <div class="link-icon">
+              <a href=" "> <i class="fa-solid fa-heart"></i> </a>
+            </div>
+            <div class="link-icon">
+              <a href=" "> <i class="fa-solid fa-plus"></i> </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- 5th queued song -->
+        <section class="queue-song-container bg-color-nav i-flex">
+          <!-- Left Panel -->
+          <div class="i-flex">
+            <!-- Queued Songs Count -->
+            <div class="count">05</div>
+            <!-- Image with Play-pause hover effect -->
+            <div class="queue-song-image">
+              <a href="#player">
+                <img src="Released/hawaii.jpg" alt="Hawaii" />
+              </a>
+            </div>
+            <!-- Song Details -->
+            <div class="concern">
+              <p class="name queue-song-name">Hawaii</p>
+              <p class="date queue-singer-name">Maluma</p>
+            </div>
+          </div>
+
+          <!-- Right Panel -->
+          <div class="i-flex">
+            <div class="link-icon">
+              <a href=" "> <i class="fa-solid fa-heart"></i> </a>
+            </div>
+            <div class="link-icon">
+              <a href=" "> <i class="fa-solid fa-plus"></i> </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- 6th queued song -->
+        <section class="queue-song-container bg-color-nav i-flex">
+          <!-- Left Panel -->
+          <div class="i-flex">
+            <!-- Queued Songs Count -->
+            <div class="count">06</div>
+            <!-- Image with Play-pause hover effect -->
+            <div class="queue-song-image">
+              <a href="#player">
+                <img src="Released/hawaii.jpg" alt="Hawaii" />
+              </a>
+            </div>
+            <!-- Song Details -->
+            <div class="concern">
+              <p class="name queue-song-name">Hawaii</p>
+              <p class="date queue-singer-name">Maluma</p>
+            </div>
+          </div>
+
+          <!-- Right Panel -->
+          <div class="i-flex">
+            <div class="link-icon">
+              <a href=" "> <i class="fa-solid fa-heart"></i> </a>
+            </div>
+            <div class="link-icon">
+              <a href=" "> <i class="fa-solid fa-plus"></i> </a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ****************************************
+                 Aside Panel
+        ******************************************* -->
+      <aside class="queue-outline">
+        <!-- Navigation Bar for similar Artist in Aside Panel -->
+        <div class="queue-bar headings">
+          Similar Artists
+        </div>
+
+        <div class="aside-box">
+          <!--Artist 1 -->
+          <div class="new-release i-flex">
+            <!-- Left Panel -->
+            <div class="i-flex">
+              <div class="pos-style i-flex">
+                <!-- play button hover in center -->
+                <div class="play-hover-icon i-flex">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+                <!-- Image with Play-pause hover effect -->
+                <div class="image-container">
+                  <a href="#player">
+                    <img src="Artist/TaylorSwift.jpg" alt="TaylorSwift" />
+                  </a>
+                </div>
+              </div>
+              <!-- Song Details -->
+              <div class="concern">
+                <p class="name">Taylor Swift</p>
+                <p class="date">Sep 01, 2022</p>
+              </div>
+            </div>
+
+            <!-- Right Panel -->
+            <div class="right-panel i-flex">
+              <!-- Dropdown menu, Dropdown icon and Duration right panel -->
+
+              <!-- Dropdown Icon -->
+              <div class="menu-icon name">
+                <i class="fa-solid fa-ellipsis"></i>
+              </div>
+              <!-- Duration -->
+              <div class="date">
+                2:52
+              </div>
+            </div>
+          </div>
+
+          <!--Artist 2 -->
+          <div class="new-release i-flex">
+            <!-- Left Panel -->
+            <div class="i-flex">
+              <div class="pos-style i-flex">
+                <!-- play button hover in center -->
+                <div class="play-hover-icon i-flex">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+                <!-- Image with Play-pause hover effect -->
+                <div class="image-container">
+                  <a href="#player">
+                    <img src="Artist/Shakira.webp" alt="Shakira" />
+                  </a>
+                </div>
+              </div>
+              <!-- Song Details -->
+              <div class="concern">
+                <p class="name">Shakira</p>
+                <p class="date">Sep 01, 2022</p>
+              </div>
+            </div>
+
+            <!-- Right Panel -->
+            <div class="right-panel i-flex">
+              <!-- Dropdown menu, Dropdown icon and Duration right panel -->
+
+              <!-- Dropdown Icon -->
+              <div class="menu-icon name">
+                <i class="fa-solid fa-ellipsis"></i>
+              </div>
+              <!-- Duration -->
+              <div class="date">
+                4:43
+              </div>
+            </div>
+          </div>
+
+          <!--Artist 2 -->
+          <div class="new-release i-flex">
+            <!-- Left Panel -->
+            <div class="i-flex">
+              <div class="pos-style i-flex">
+                <!-- play button hover in center -->
+                <div class="play-hover-icon i-flex">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+                <!-- Image with Play-pause hover effect -->
+                <div class="image-container">
+                  <a href="#player">
+                    <img src="Artist/Shreya.jpg" alt="Shreya" />
+                  </a>
+                </div>
+              </div>
+              <!-- Song Details -->
+              <div class="concern">
+                <p class="name">Shreya Ghoshal</p>
+                <p class="date">Sep 01, 2022</p>
+              </div>
+            </div>
+
+            <!-- Right Panel -->
+            <div class="right-panel i-flex">
+              <!-- Dropdown menu, Dropdown icon and Duration right panel -->
+
+              <!-- Dropdown Icon -->
+              <div class="menu-icon name">
+                <i class="fa-solid fa-ellipsis"></i>
+              </div>
+              <!-- Duration -->
+              <div class="date">
+                3:28
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ++++++++++++++++++++++++++++++++++++++++++++++++
+          Navigation Bar for Recently Played in Aside Panel 
+        ++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+        <div class="queue-bar i-flex headings">
+          Recently Played
+        </div>
+
+        <!-- Songs container in Aside Panel -->
+        <div class="aside-box">
+          <!-- 1st queued song -->
+        <div class="queue-song-container i-flex">
+            <!-- Left Panel -->
+            <div class="i-flex">
+              <!-- Queued Songs Count -->
+              <div class="count">01</div>
+              <!-- Image with Play-pause hover effect -->
+              <div class="queue-song-image">
+                <a href="#player">
+                  <img src="Released/pasoori.webp" alt="Pasoori" />
+                </a>
+              </div>
+              <!-- Song Details -->
+              <div class="concern">
+                <p class="name queue-song-name">Pasoori</p>
+                <p class="date queue-singer-name">Ali Sethi</p>
+              </div>
+            </div>
+  
+            <!-- Right Panel -->
+            <div class="i-flex">
+              <div class="link-icon">
+                <a href=" "> <i class="fa-solid fa-heart"></i> </a>
+              </div>
+            </div>
+          </div>
+  
+          <!-- 2nd queued song -->
+          <div class="queue-song-container i-flex">
+            <!-- Left Panel -->
+            <div class="i-flex">
+              <!-- Queued Songs Count -->
+              <div class="count">02</div>
+              <!-- Image with Play-pause hover effect -->
+              <div class="queue-song-image">
+                <a href="#player">
+                  <img src="Released/hawaii.jpg" alt="hawaii" />
+                </a>
+              </div>
+              <!-- Song Details -->
+              <div class="concern">
+                <p class="name queue-song-name">Hawai</p>
+                <p class="date queue-singer-name">Maluma</p>
+              </div>
+            </div>
+  
+            <!-- Right Panel -->
+            <div class="i-flex">
+              <div class="link-icon">
+                <a href=" "> <i class="fa-solid fa-heart"></i> </a>
+              </div>
+            </div>
+          </div>
+  
+          <!-- 3rd queued song -->
+          <div class="queue-song-container i-flex">
+            <!-- Left Panel -->
+            <div class="i-flex">
+              <!-- Queued Songs Count -->
+              <div class="count">03</div>
+              <!-- Image with Play-pause hover effect -->
+              <div class="queue-song-image">
+                <a href="#player">
+                  <img src="Released/bamb.webp" alt="Bamb-Agya" />
+                </a>
+              </div>
+              <!-- Song Details -->
+              <div class="concern">
+                <p class="name queue-song-name">Bamb Agya</p>
+                <p class="date queue-singer-name"> J. Sandlas</p>
+              </div>
+            </div>
+  
+            <!-- Right Panel -->
+            <div class="i-flex">
+              <div class="link-icon">
+                <a href=" "> <i class="fa-solid fa-heart"></i> </a>
+              </div>
+            </div>
+          </div>
+  
+          <!-- 4th queued song -->
+          <div class="queue-song-container i-flex">
+            <!-- Left Panel -->
+            <div class="i-flex">
+              <!-- Queued Songs Count -->
+              <div class="count">04</div>
+              <!-- Image with Play-pause hover effect -->
+              <div class="queue-song-image">
+                <a href="#player">
+                  <img src="Released/kesariya.webp" alt="kesariya" />
+                </a>
+              </div>
+              <!-- Song Details -->
+              <div class="concern">
+                <p class="name queue-song-name">Kesariya</p>
+                <p class="date queue-singer-name">Snow Man</p>
+              </div>
+            </div>
+  
+            <!-- Right Panel -->
+            <div class="i-flex">
+              <div class="link-icon">
+                <a href=" "> <i class="fa-solid fa-heart"></i> </a>
+              </div>
+            </div>
+          </div>
+  
+          <!-- 5th queued song -->
+          <div class="queue-song-container i-flex">
+              <!-- Left Panel -->
+              <div class="i-flex">
+                <!-- Queued Songs Count -->
+                <div class="count">05</div>
+                <!-- Image with Play-pause hover effect -->
+                <div class="queue-song-image">
+                  <a href="#player">
+                    <img src="Hindi/baarish.webp" alt="Baarish" />
+                  </a>
+                </div>
+                <!-- Song Details -->
+                <div class="concern">
+                  <p class="name queue-song-name">Baarish</p>
+                  <p class="date queue-singer-name">Snow Man</p>
+                </div>
+              </div>
+    
+              <!-- Right Panel -->
+              <div class="i-flex">
+                <div class="link-icon">
+                  <a href=" "> <i class="fa-solid fa-heart"></i> </a>
+                </div>
+              </div>
+            </div>
+  
+            <!-- 6th queued song -->
+          <div class="queue-song-container i-flex">
+              <!-- Left Panel -->
+              <div class="i-flex">
+                <!-- Queued Songs Count -->
+                <div class="count">06</div>
+                <!-- Image with Play-pause hover effect -->
+                <div class="queue-song-image">
+                  <a href="#player">
+                    <img src="Hindi/filhall.webp" alt="Filhall" />
+                  </a>
+                </div>
+                <!-- Song Details -->
+                <div class="concern">
+                  <p class="name queue-song-name">Filhall</p>
+                  <p class="date queue-singer-name">Snow Man</p>
+                </div>
+              </div>
+    
+              <!-- Right Panel -->
+              <div class="i-flex">
+                <div class="link-icon">
+                  <a href=" "> <i class="fa-solid fa-heart"></i> </a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </aside>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>

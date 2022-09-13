@@ -1,0 +1,912 @@
+/* ##############################################
+              Global Styles
+############################################## */
+
+body {
+  margin: 0px;
+  background-color: var(--main-background-color);
+}
+
+:root {
+  --brand-color: #00b82e;
+  --brand-suffix-color: darkorange;
+  --navigation-background-color: #21252d;
+  --main-background-color: #0c0f12;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Brand Color Class */
+.color-green {
+  color: var(--brand-color);
+}
+.color-white {
+  color: white;
+}
+.color-organe {
+  color: var(--brand-suffix-color);
+}
+/* flex class */
+.i-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pic {
+  width: 100%;
+  height: 100%;
+}
+/* Relative position Style */
+.pos-style {
+  position: relative;
+}
+
+.play-hover-icon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  opacity: 0;
+}
+
+.pos-style:hover {
+  opacity: 0.75;
+}
+
+.play-hover-icon:hover {
+  opacity: 1;
+}
+.text-center {
+  align-items: center;
+}
+
+/* All Headings */
+.headings {
+  margin-top: 0%;
+  color: var(--brand-color);
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-bottom: 2px;
+  border: 2.5px solid var(--brand-suffix-color);
+  border-style: none none solid none;
+}
+/* ############### || End Global Style || ############## */
+
+/* ######################################################
+                    Navigation Bar Styles
+######################################################### */
+
+/* Navigation Bar Outer Style */
+.navbar-fixed {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  top: 0;
+  background-color: var(--navigation-background-color);
+  border: 2.5px solid var(--brand-color);
+  border-style: solid none none none;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 3rem;
+}
+.nav-disable-big,
+.nav-disable-medium {
+  display: none;
+}
+.list-icon {
+  font-size: 1.5rem;
+  padding-right: 1rem;
+}
+/* Brand Logo */
+.brand-logo {
+  font-size: 2.2rem;
+}
+
+/* Brand Name i.e.snow */
+#brand-name {
+  text-decoration: none;
+  font-size: large;
+  color: var(--brand-color);
+}
+/* Brand Suffix i.e. Music */
+#brand-suffix {
+  text-decoration: none;
+  font-size: large;
+  color: var(--brand-suffix-color);
+}
+/* Search Bar */
+.search {
+  /* position: relative; */
+  margin-left: 3rem;
+  background-color: var(--main-background-color);
+  border-radius: 7px;
+  padding: 10px;
+}
+.search input {
+  color: var(--brand-color);
+  font-size: medium;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  padding: 0rem 0.5rem;
+}
+.search input::placeholder {
+  color: var(--brand-suffix-color);
+  font-size: medium;
+}
+
+/* Right Panel of Navigation Bar */
+.link {
+  padding: 7px;
+}
+
+.link a {
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  font-size: medium;
+}
+
+.link a:hover {
+  color: var(--brand-color);
+}
+
+/* Sign-in Icon */
+.sign-in-icon {
+  font-size: 1.7rem;
+  margin-left: 1rem;
+}
+/* Icons Links On Right Panel */
+.link-icon {
+  padding: 7px;
+}
+.link-icon a {
+  text-decoration: none;
+  color: white;
+  font-size: medium;
+}
+
+.link-icon a:hover {
+  color: red;
+}
+
+/* Profile Pic Style */
+.profile-pic {
+  height: 2.7rem;
+  width: 2.7rem;
+  /* background-color: yellowgreen; */
+  border-radius: 50%;
+  margin-left: 1rem;
+}
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* ############ || End-Navigation Bar || ############### */
+
+/* #################################################
+                    Main Section Styles
+#################################################### */
+
+/* ################################################
+                   Carousel Section 
+   ################################################ */
+
+/* Showcase Container */
+.showcase {
+  width: 100%;
+  height: aut0;
+  padding-top: 4rem;
+  overflow: auto;
+  justify-content: space-around;
+}
+.showcase-container {
+  height: 12rem;
+  margin: 1.5rem 0.5rem;
+  border-radius: 10px;
+  overflow: hidden;
+  opacity: 0.7;
+}
+
+.showcase-container:hover {
+  opacity: 1;
+  transform: scale(1.35);
+  transition: 100ms ease-in-out;
+  z-index: 1;
+}
+
+/* ##################################################
+                      New release
+  ################################################### */
+
+/* Outer Main container's Structure Style */
+.outer-main {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0rem 5rem;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+/* Main Section for Remaining Sections */
+.sub-main {
+  flex-direction: column;
+}
+
+.section-container {
+  height: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* New Release Container */
+.new-release {
+  min-width: 18rem;
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+  justify-content: space-between;
+}
+
+.image-container {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Concerned Names i.e. song, artist, date etc */
+.concern {
+  /* color: white; */
+  margin-left: 10px;
+  padding-bottom: 15px;
+}
+.name,
+.date {
+  color: white;
+  font-family: sans-serif;
+}
+.name {
+  font-size: 1em;
+  font-weight: bold;
+}
+.date {
+  font-size: 0.9em;
+  font-weight: 100;
+}
+/* Right Panel */
+.right-panel {
+  align-self: flex-start;
+  flex-direction: column;
+}
+/* #################################################
+                  Popular Artist Section
+   ################################################# */
+.artist-box {
+  margin-bottom: 1.5rem;
+  flex-direction: column;
+}
+
+.artist-image {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* #################################################
+              Stations-section
+  ################################################## */
+
+.station {
+  background-color: var(--navigation-background-color);
+  padding: 0.8rem 0.7rem;
+  margin: 0.4rem 0rem;
+  border: 2.5px solid var(--brand-color);
+  border-style: solid none;
+}
+
+.station-logo {
+  height: 6rem;
+  width: 6rem;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: darkred;
+}
+/* Station Boxes */
+.station-box {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+.title {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 0.9rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  /* text-shadow: 0px 5px 6px rgba(0, 0, 0); */
+}
+/* Background colors shades for Stations name */
+.love {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(#ff577e50 0%, #ff577f50 100%);
+}
+
+.retro {
+  background: linear-gradient(#f0cb6550 0%, #f1ce6d50 100%);
+}
+
+.workout {
+  background: linear-gradient(#ebd8b750 0%, #ebd8b750 100%);
+}
+
+.rock {
+  background: linear-gradient(#0015ff50 0%, #0015ff50 100%);
+}
+
+.pop {
+  background: linear-gradient(
+    rgba(255, 166, 0, 0.5) 0%,
+    rgba(255, 68, 0, 0.5) 100%
+  );
+}
+
+/* Station Images  */
+.station-image {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* #################################################
+                 Mood Category- Section
+  ################################################## */
+
+.mood-box {
+  margin: 1rem 0rem;
+  max-width: 16.5rem;
+  /* padding: 1rem; */
+  height: 12rem;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  /* top: 1; */
+}
+.mood-name {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  background-color: #00000050;
+  z-index: 1;
+}
+.mood-image {
+  max-width: 16.5rem;
+  height: 12rem;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.mood-box:hover .mood-image img {
+  transform: scale(1.2);
+  transition: 0.3s ease-in-out;
+}
+/* #################################################
+                Latest Hindi/English Section
+  ################################################## */
+.latest-column {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.song-image {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 0.7rem;
+}
+.song-name {
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.song-date {
+  font-family: sans-serif;
+  font-size: 0.6rem;
+}
+
+.last-space {
+  padding-bottom: 7rem;
+}
+/* #################################################
+                Aside Panel - Queued Songs 
+  ##################################################*/
+
+.queue-outline {
+  width: 40%;
+  height: 90vh;
+  position: sticky;
+  display: none;
+  top: 6rem;
+}
+.queue-bar {
+  position: sticky;
+  margin-bottom: 0.5rem;
+  justify-content: space-between;
+  background-color: var(--navigation-background-color);
+  padding: 0.7rem;
+  border-radius: 10px;
+}
+
+.queue-heading {
+  border-style: none;
+}
+.queue-song-container {
+  height: auto;
+  padding: 0rem 0.9rem;
+  justify-content: space-between;
+}
+.queue-song-box {
+  overflow: auto;
+  height: 62vh;
+}
+.count {
+  color: white;
+  font-size: medium;
+  font-family: sans-serif;
+  padding-right: 10px;
+}
+
+.queue-song-image {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.queue-song-image a img {
+  width: 100%;
+  height: 100%;
+}
+/* Concerned Names i.e. song, artist, date etc */
+.concern {
+  margin-left: 10px;
+}
+
+.queue-song-name {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+.queue-singer-name {
+  font-size: 0.7em;
+  font-weight: 100;
+}
+/* ########### || End of Main Section || ################# */
+
+/* ##########################################################
+              Dropdown Menu 
+  ########################################################## */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-size: normal;
+  color: white;
+  text-align: left;
+}
+
+.dropdown input[type="checkbox"] {
+  display: none;
+}
+
+/* Click to expand button */
+
+.dropdown label {
+  display: inline-block;
+  cursor: pointer;
+  text-align: left;
+}
+
+.dropdown-queue label {
+  text-align: right;
+  width: 10.5rem;
+}
+.dropdown-queue > label:after {
+  content: "\f0d7";
+  font-family: FontAwesome;
+  margin-left: 6px;
+}
+
+/*  The ul will have display:none by default */
+
+ul {
+  position: absolute;
+  list-style: none;
+  text-align: left;
+  width: 11.5rem;
+  z-index: 1;
+  margin-left: -2.5em;
+  display: none;
+}
+
+ul li {
+  box-sizing: border-box;
+  padding: 0.4rem 0.7rem;
+  background-color: var(--navigation-background-color);
+  color: var(--brand-suffix-color);
+  font-family: sans-serif;
+  margin-bottom: 0.4px;
+  cursor: pointer;
+}
+.dropdown-nav ul li {
+  padding: 1rem;
+  font-size: 1.3rem;
+  margin-bottom: -0.2rem;
+}
+ul li:hover {
+  background-color: var(--brand-color);
+  color: white;
+  /* font-weight: bold; */
+}
+
+ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input[type="checkbox"]:checked ~ label {
+  color: var(--brand-color);
+}
+
+input[type="checkbox"]:checked ~ ul {
+  display: block;
+}
+
+.dropdown-queue input[type="checkbox"]:checked + label:after {
+  content: "\f0d8";
+}
+
+/* ############ End of Dropdown Style ################## */
+
+/* #######################################################
+                      Media Player -Footer                    
+  ######################################################## */
+
+.media-box {
+  position: fixed;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: var(--navigation-background-color);
+  border-radius: 7px;
+  flex-direction: column;
+  z-index: 1;
+  display: none;
+}
+#player:target {
+  display: block;
+}
+
+.media {
+  width: 98%;
+  padding-top: 0.7rem;
+  justify-content: space-around;
+}
+.song-info {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: white;
+  font-family: sans-serif;
+}
+
+.song-info p {
+  font-size: 0.9rem;
+}
+
+.play-icon a {
+  text-decoration: none;
+  color: var(--brand-color);
+  font-size: 45px;
+}
+.progress {
+  min-width: 100%;
+}
+.progress input {
+  width: 100%;
+}
+
+/* Volume and Seek Bar Styles  */
+input[type="range"] {
+  overflow: hidden;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+::-webkit-slider-runnable-track {
+  background: white;
+  height: 0.4rem;
+  border-radius: 5px;
+}
+
+::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -4px;
+  background-color: var(--brand-suffix-color);
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  box-shadow: -100vw 0 0 99vw var(--brand-color);
+}
+
+/* ###################################################
+                  Artist.html
+  ##################################################### */
+
+/* ################### Artist Details ################# */
+.main-section {
+  flex-direction: column;
+}
+.artist-1st-section {
+  margin-top: 6rem;
+  height: 25rem;
+  border-radius: 3px;
+  justify-content: space-between;
+  background-color: darkgreen;
+  overflow: hidden;
+}
+.artist-pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+}
+
+.artist-pic::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 140, 0, 0) 0%,
+    darkgreen 95%
+  );
+}
+
+.artist-details {
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem;
+  font-family: sans-serif;
+}
+
+.artist-heading {
+  justify-content: space-between;
+  color: var(--brand-suffix-color);
+}
+.artist-name {
+  margin-bottom: -0.6rem;
+  font-weight: bolder;
+}
+
+.description {
+  margin-top: 0.3rem;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+  font-size: 0.7rem;
+  max-height: 7rem;
+  overflow: auto;
+  color: white;
+}
+.controls {
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+  width: 100%;
+}
+.controls button {
+  padding: 0.8rem;
+  width: 40%;
+  font-weight: bold;
+  border-radius: 0%;
+  margin-right: 0.5rem;
+  border: 0px;
+  color: #ffffff;
+  background: transparent;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0.2rem white;
+}
+.controls button:first-child {
+  background: linear-gradient(to right, #ff0101, #fc9802);
+}
+.songs {
+  justify-content: flex-start;
+  font-weight: bold;
+  color: white;
+  font-size: 0.9rem;
+}
+.tracks {
+  margin-right: 0.5rem;
+  padding-right: 0.5rem;
+  border-right: 2px solid white;
+}
+
+/* Songs list in main section with "+" sign */
+.bg-color-nav {
+  background-color: var(--navigation-background-color);
+  margin-top: 1rem;
+}
+
+/* Aside Panel for artist.html file */
+.aside-box {
+  overflow: auto;
+  height: 33.5vh;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* #######################################################
+                Media Queries for Responsive Styles
+  ######################################################## */
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                            Screen Size : 150px + 
+    ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+@media only screen and (min-width: 150px) {
+  /* Carousal Section */
+  .showcase-disable-3rd,
+  .showcase-disable-4th {
+    display: none;
+  }
+  /* Mood Section */
+  .mood-section {
+    flex-direction: column;
+  }
+
+  /* Media Player responsive Styles */
+  .media-box {
+    bottom: 0rem;
+    left: 0rem;
+    width: 100%;
+  }
+  .song-info,
+  .player-disabled {
+    display: none;
+  }
+  /* -----------------Artist.html responsive styles ------------------- */
+  .artist-name {
+    font-size: 1rem;
+  }
+  .artist-font {
+    font-size: 0.8rem;
+  }
+  .controls button {
+    font-size: 0.7rem;
+  }
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                            Screen Size : 556px + 
+    ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+@media only screen and (min-width: 556px) {
+  /* Navigation Styles */
+  .nav-disable-medium {
+    display: block;
+  }
+  .nav-disable-lens {
+    display: none;
+  }
+  input[type="text"] {
+    width: 5.5rem;
+  }
+  /* Carousal Section */
+  .showcase-disable-3rd {
+    display: block;
+  }
+  /* Mood Section */
+  .mood-section {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /* Media Player responsive Styles */
+
+  .song-info,
+  .player-disabled {
+    display: block;
+  }
+
+  .player-disabled input {
+    width: 4rem;
+  }
+  /* -----------------Artist.html responsive styles ------------------- */
+  .artist-name {
+    font-size: 1.3rem;
+  }
+  .artist-font {
+    font-size: 1rem;
+  }
+  .controls button {
+    font-size: 0.9rem;
+  }
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                            Screen Size : 890px + 
+    ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+@media only screen and (min-width: 890px) {
+  /* Navigation Styles */
+  .nav-disable-big {
+    display: block;
+  }
+  .nav-disable-small {
+    display: none;
+  }
+  input[type="text"] {
+    width: 14rem;
+  }
+  /* Media Player responsive Styles */
+  .media-box {
+    bottom: 1rem;
+    left: 5.2rem;
+    width: 85%;
+  }
+  .player-disabled input {
+    width: 7rem;
+  }
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                            Screen Size : 1040px + 
+    ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+@media only screen and (min-width: 1040px) {
+  /* hide the queue in aside panel */
+  .queue-outline {
+    display: block;
+    margin-left: 3rem;
+  }
+  /* Carousal Section */
+  .showcase-disable-4th {
+    display: block;
+  }
+}
